@@ -17,16 +17,13 @@ class _HomeScreenState extends State<HomeScreen> {
         centerTitle: true,
         backgroundColor: Colors.red,
       ),
-      body: Center(
-        child: Container(
-          height: 350,
-          width: 350,
-          child: Image.asset(
-            "assets/images/UcfxRVB.jpg",
-            fit: BoxFit.cover,
-          ),
-        ),
-      ),
+     body:Center(
+       child: CircleAvatar(
+         radius: 100,
+         backgroundImage: AssetImage("assets/images/spider.jpg"),
+
+       ),
+     )
     ));
   }
 }
